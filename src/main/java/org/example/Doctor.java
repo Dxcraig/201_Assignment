@@ -43,4 +43,9 @@ public class Doctor {
     public void setPatientsTreated(int patientsTreated) {
         this.patientsTreated = patientsTreated;
     }
+
+    public void treatPatient(){
+        patientsTreated++;
+        System.out.println("Patient treated successfully. Total patients treated: " + patientsTreated);
+    }
 }
