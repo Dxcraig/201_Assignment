@@ -50,4 +50,9 @@ public class Patient {
         }
         this.diagnosis = diagnosis;
     }
+
+    public void updateDiagnosis(String newDiagnosis){
+        this.diagnosis = newDiagnosis;
+        System.out.println("Diagnosis updated successfully to: " + newDiagnosis);
+    }
 }
