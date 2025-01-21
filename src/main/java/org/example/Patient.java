@@ -45,6 +45,9 @@ public class Patient {
     }
 
     public void setDiagnosis(String diagnosis) {
+        if (diagnosis == null || diagnosis.isEmpty()){
+            throw new IllegalArgumentException("Diagnosis cannot be empty");
+        }
         this.diagnosis = diagnosis;
     }
 }
